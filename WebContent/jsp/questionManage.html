@@ -1,0 +1,40 @@
+<form method="post" action="/thatzit/append">
+<input type="hidden" name="questionId" value="42">
+<table>
+<tr><th>
+    <p>Title (from database)</p>
+</th></tr>
+<tr><td>
+    <p>Description (from database)</p>
+</td></tr>
+<tr><td>
+    <p>To make changes in this question, you must provide the same password
+    used at the creation of this question:</p>
+</td></tr>
+<tr><td>
+    <p>Password: <input type="password" name="questionPassword"
+    class="text"></p>
+</td></tr>
+<tr><td>
+    <p>Append description:</p>
+    <p><textarea name="questionDescription" rows="7"></textarea></p>
+</td></tr>
+<tr><td>
+    <p><input type="submit" value="Submit description"></p>
+</td></tr>
+<tr><td>
+    <p>== OR ==</p>
+</td></tr>
+<tr><td>
+    <p><a href="javascript:alert('Question closed');">Close this
+    question!</a></p>
+</td></tr>
+<tr><td>
+    <p>== OR ==</p>
+</td></tr>
+<tr><td>
+    <p><a href="javascript:alert('Question deleted!');">Delete this
+    question!</a></p>
+</td></tr>
+</table>
+</form>

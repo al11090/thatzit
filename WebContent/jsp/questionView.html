@@ -1,0 +1,56 @@
+<table>
+<tr><th>
+    <p>Title (from database)</p>
+</th></tr>
+<tr><td>
+    <p>Description (from database)</p>
+</td></tr>
+<tr><td>
+    <p>Genre (from database)</p>
+</td></tr>
+<tr><td>
+    <p><a href="javascript:alert('Thanks!');">Like this question!</a></p>
+</td></tr>
+<tr><td>
+    <p><a href="javascript:alert('Thanks!');">Report this question</a></p>
+</td></tr>
+</table>
+<p>If you are the creator of this question, you can <a 
+href="/thatzit/jsp/manage.jsp">manage this question</a>.</p>
+
+<h2>Answers</h2>
+<table>
+<tr class="answer"><td>
+Answer from the database
+<p><a href="javascript:alert('Thanks!');">Like this answer!</a></p>
+<p><a href="javascript:alert('Thanks!');">Report this answer</a></p>
+<p><a href="/thatzit/jsp/answerDelete.html">Delete this answer</a></p>
+</td></tr>
+
+<tr class="answer"><td>
+Another answer
+<p><a href="javascript:alert('Thanks!');">Like this answer!</a></p>
+<p><a href="javascript:alert('Thanks!');">Report this answer</a></p>
+<p><a href="/thatzit/jsp/answerDelete.html">Delete this answer</a></p>
+</td></tr>
+</table>
+
+<h2>Answer this question:</h2>
+<form method="post">
+<table class="form">
+<tr>
+    <th colspan="2">Please fill in the form below to submit an answer:</th>
+</tr>
+<tr>
+    <td>Your answer:</td>
+    <td><textarea name="answerDescription" rows="7"></textarea></td>
+</tr>
+<tr>
+    <td>Password:</td>
+    <td><input type="password" name="answerPassword" class="text"></td>
+</tr>
+<tr class="center">
+    <td colspan="2"><input type="submit" value="Submit answer"></td>
+</tr>
+</table>
+</form>

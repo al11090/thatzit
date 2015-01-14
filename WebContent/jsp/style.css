@@ -1,0 +1,8 @@
+.center {text-align: center}
+table.form th {padding: 20px}
+table.form td {padding: 10px}
+table.form tr {vertical-align: top}
+input.text, textarea {width: 400px}
+table.list {padding: 30px}
+tr.answer td {background-color: #aaaaaa; padding: 20px}
+table.menu td {padding: 20px}
