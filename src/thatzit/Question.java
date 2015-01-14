@@ -92,7 +92,7 @@ public class Question {
     public void delete() {
   deleted=true;
     }
-    public boolean getDeleted(){
+    public boolean isDeleted(){
     	return deleted;
     }
 }
