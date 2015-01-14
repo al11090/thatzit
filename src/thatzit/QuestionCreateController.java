@@ -42,10 +42,6 @@ public class QuestionCreateController extends HttpServlet {
 		
 		QuestionList.add(question);
 		
-		request.setAttribute("question", question);
-		
-		getServletConfig().getServletContext()
-		.getRequestDispatcher("/jsp/view.jsp")
-		.forward(request, response);
+		response.sendRedirect("/thatzit/view?id=" + Integer.toString(question.getId()));
     }
 }

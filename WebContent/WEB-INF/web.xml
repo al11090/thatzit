@@ -16,6 +16,16 @@
       <url-pattern>/ask</url-pattern>
   </servlet-mapping>
    
+   <!-- view question -->
+  <servlet>
+      <servlet-name>QuestionViewController</servlet-name>
+      <servlet-class>thatzit.QuestionViewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>QuestionViewController</servlet-name>
+      <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+   
   <!--  append description -->
   <servlet>
       <servlet-name>AppendDescriptionController</servlet-name>

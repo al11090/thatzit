@@ -1,5 +1,6 @@
 package thatzit;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -15,15 +16,18 @@ public class QuestionList {
     }
 
     public static Question getQuestionById(int id) {
-        return list.get(id);
+        for (Question question : list) {
+            if (question.getId() == id) return question; 
+        }
+        return null;
     }
 
-    public static List<Question> selectQuestions(String query) {
-        List<Question> queryResultList = new ArrayList<Question>();
-        if(query != null) {
-            // execute the query
-        }
-        
-        return queryResultList;
-    }
+	public static List<Question> selectQuestions(String query) {
+		List<Question> result = new LinkedList<Question>();
+		if (query == null || query == "*") return list;
+		for (Question question : list) {
+			if (!question.isDeleted()) result.add(question);
+		}
+		return list;
+	}
 }
