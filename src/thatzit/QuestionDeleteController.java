@@ -14,8 +14,10 @@ public class QuestionDeleteController extends HttpServlet {
 		RequestDispatcher dispatcher;
 		String resultText;
 
-		int qid = Integer.parseInt( request.getParameter("questionId") );
-		Question qs = QuestionList.getQuestionById( qid );
+		//int qid = Integer.parseInt( request.getParameter("questionId") );
+		//Question qs = QuestionList.getQuestionById( qid );
+		
+		
 
 		String inputPassword = request.getParameter("questionPassword");
 

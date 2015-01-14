@@ -5,9 +5,11 @@ import java.util.ArrayList;
 
 public class QuestionList {
     private static List<Question> list = new ArrayList<Question>();
+    int id=0;
 
     public static void add(Question question) {
         if(question != null) {
+        	question.setid(id);
             list.add(question);
         }
     }
