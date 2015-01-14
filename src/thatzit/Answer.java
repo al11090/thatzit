@@ -9,6 +9,7 @@ public class Answer {
     private String password;
     private int status;
     private int likes;
+    private boolean deleted=false;
 
     public Answer(int id) {
         this.id = id;
@@ -45,6 +46,9 @@ public class Answer {
     }
 
     public void delete() {
-        //exclude from database
+        this.deleted=true;
+    }
+    public boolean getDeleted(){
+    	return deleted;
     }
 }
