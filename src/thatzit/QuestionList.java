@@ -7,9 +7,9 @@ public class QuestionList {
     private static List<Question> list = new ArrayList<Question>();
 
     public static void add(Question question) {
-        if(question != null) {
+        //if(question != null) {
             list.add(question);
-        }
+        //}
     }
 
     public static Question getQuestionById(int id) {
@@ -21,7 +21,7 @@ public class QuestionList {
         if(query != null) {
             // execute the query
         }
-
+        
         return queryResultList;
     }
 }
