@@ -5,11 +5,11 @@ import java.util.ArrayList;
 
 public class QuestionList {
     private static List<Question> list = new ArrayList<Question>();
-    int id=0;
+    static int id = 0;
 
     public static void add(Question question) {
         if(question != null) {
-        	question.setid(id);
+        	question.setId(id++);
             list.add(question);
         }
     }
@@ -23,7 +23,7 @@ public class QuestionList {
         if(query != null) {
             // execute the query
         }
-
+        
         return queryResultList;
     }
 }

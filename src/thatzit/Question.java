@@ -6,8 +6,8 @@ import java.util.LinkedList;
 public class Question {
     private String title;
     private String password;
-    private int id; 
-    private int genre;
+    private int id;
+    private QuestionGenre genre;
     private int status;
     private int likes;
     private boolean deleted=false;
@@ -60,11 +60,11 @@ public class Question {
         this.password = password;
     }
 
-    public int getGenre() {
+    public QuestionGenre getGenre() {
         return genre;
     }
 
-    public void setGenre(int genre) {
+    public void setGenre(QuestionGenre genre) {
         this.genre = genre;
     }
 

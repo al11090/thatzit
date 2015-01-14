@@ -6,26 +6,37 @@
   version="3.0"
   metadata-complete="true">
 
+  <!-- create question -->
+  <servlet>
+      <servlet-name>QuestionCreateController</servlet-name>
+      <servlet-class>thatzit.QuestionCreateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>QuestionCreateController</servlet-name>
+      <url-pattern>/ask</url-pattern>
+  </servlet-mapping>
+   
+  <!--  append description -->
   <servlet>
       <servlet-name>AppendDescriptionController</servlet-name>
       <servlet-class>thatzit.AppendDescriptionController</servlet-class>
   </servlet>
-
-  <servlet>
-      <servlet-name>QuestionSearchController</servlet-name>
-      <servlet-class>thatzit.QuestionSearchController</servlet-class>
-  </servlet>
-
   <servlet-mapping>
       <servlet-name>AppendDescriptionController</servlet-name>
       <url-pattern>/append</url-pattern>
   </servlet-mapping>
-
+  
+  <!--  search question -->
+  <servlet>
+      <servlet-name>QuestionSearchController</servlet-name>
+      <servlet-class>thatzit.QuestionSearchController</servlet-class>
+  </servlet>
   <servlet-mapping>
       <servlet-name>QuestionSearchController</servlet-name>
       <url-pattern>/search</url-pattern>
   </servlet-mapping>
-
+  
+  <!--  index -->
   <welcome-file-list>
       <welcome-file>/jsp/index.jsp</welcome-file>
   </welcome-file-list>
