@@ -15,7 +15,14 @@ public class QuestionList {
     }
 
     public static Question getQuestionById(int id) {
-        return list.get(id);
+    	for(int i=0;i<list.size();i++){
+    		Question que=new Question();
+    		que=list.get(i);
+    		if(id==que.getId()){
+    			return que;
+    		}
+    	}
+    		return null;
     }
 
     public static List<Question> selectQuestions(String query) {
