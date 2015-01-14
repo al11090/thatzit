@@ -2,5 +2,5 @@
 
 <%@ include file="header.html" %>
 <%@ include file="menu.html" %>
-<%@ include file="questionView.html" %>
+<%@ include file="questionView.jsp" %>
 <%@ include file="footer.html" %>

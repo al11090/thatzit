@@ -14,8 +14,6 @@
 <tr>
     <td>Genre:</td>
     <td><select name="questionGenre">
-    <option disabled="disabled" selected="selected">Select one genre</option>
-    <option disabled="disabled">-----</option>
     <%@ include file="genreList.jsp" %>
     </select></td>
 </tr>

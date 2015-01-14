@@ -12,11 +12,13 @@ public class Question {
     private int likes;
     private boolean deleted=false;
     private List<Description> descriptions;
+    private List<Answer> answers;
 
     public Question() {
         status = 1;
         likes = 0;
         descriptions = new LinkedList<Description>();
+        answers = new LinkedList<Answer>();
     }
 
     public String getTitle() {
@@ -45,12 +47,16 @@ public class Question {
             return null;
         }
     }
+    
+    public List<Description> getDescriptions() { return descriptions; }
 
     public void appendDescription(Description description) {
         if(description != null) {
             descriptions.add(description);
         }
     }
+    
+    public List<Answer> getAnswers() { return answers; }
 
     public String getPassword() {
         return password;
@@ -90,7 +96,7 @@ public class Question {
     }
 
     public void delete() {
-  deleted=true;
+        deleted=true;
     }
     public boolean isDeleted(){
     	return deleted;
