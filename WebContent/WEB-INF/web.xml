@@ -36,6 +36,16 @@
       <url-pattern>/list</url-pattern>
   </servlet-mapping>
   
+  <!-- create answer -->
+  <servlet>
+      <servlet-name>AnswerCreateController</servlet-name>
+      <servlet-class>thatzit.AnswerCreateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AnswerCreateController</servlet-name>
+      <url-pattern>/answer</url-pattern>
+  </servlet-mapping>
+  
   <!--  append description -->
   <servlet>
       <servlet-name>AppendDescriptionController</servlet-name>

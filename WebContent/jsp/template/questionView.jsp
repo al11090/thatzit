@@ -36,12 +36,13 @@
 </c:if>
 
 <h2>Answer this question:</h2>
-<form method="post">
+<form method="post" action="/thatzit/answer">
 	<dl>
 		<dt>Your answer:</dt>
-		<dd><textarea name="answerDescription" rows="7"></textarea></dd>
+		<dd><textarea name="description" rows="7"></textarea></dd>
 		<dt>Password:</dt>
-		<dd><input type="password" name="answerPassword" class="text" /></dd>
+		<dd><input type="password" name="password" class="text" /></dd>
 	</dl>
+	<input type="hidden" name="id"  value="${question.id}" />
 	<input type="submit" value="Submit answer">
 </form>

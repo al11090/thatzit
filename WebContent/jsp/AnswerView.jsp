@@ -1,14 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%
-	String des = request.getParameter("description");
-	int like = Integer.parseInt(request.getParameter("like"));
-%>
+<%@ page pageEncoding="utf-8"%>
 <html>
 <head>
 <title>Answer</title>
 </head>
 <body>
-<p><%= des %></p><br />
-<p>Like of this Answer is <%= like %></p><br />
+<p>${answer.description}</p><br />
+<p>Like of this Answer is ${answer.like}</p><br />
+<p><a href="/thatzit/view?id=${question.id}">back to question.</a></p>
 </body>
 </html>

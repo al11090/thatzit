@@ -11,10 +11,18 @@ public class Answer {
     private int likes;
     private boolean deleted=false;
 
-    public Answer(int id) {
-        this.id = id;
+    public Answer() {
+        id = 0;
         status = 1;
         likes = 0;
+    }
+    
+    public int getId() {
+    	return id;
+    }
+    
+    public void setId(int id) {
+    	this.id = id;
     }
 
     public String getDescription() {

@@ -5,7 +5,7 @@
 </tr>
 <tr>
     <td>Title:</td>
-    <td><input type="text" name="questionTitle" class="text">${questionTitle}</td>
+    <td>Q.<input type="text" name="questionTitle" class="text">${questionTitle}</td>
 </tr>
 <tr>
     <td>Description:</td>

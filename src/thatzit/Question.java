@@ -57,6 +57,13 @@ public class Question {
     }
     
     public List<Answer> getAnswers() { return answers; }
+    
+    public void appendAnswer(Answer answer) {
+        if (answer != null) {
+            answer.setId(answers.size());
+            answers.add(answer);
+        }
+    }
 
     public String getPassword() {
         return password;
