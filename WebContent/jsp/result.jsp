@@ -2,10 +2,10 @@
 <%@ page import="java.util.List,thatzit.Question" %>
 <% List<Question> searchResult = (List<Question>)request.getAttribute("searchResult"); %>
 
-<%@ include file="header.html" %>
-<%@ include file="menu.html" %>
+<%@ include file="template/header.html" %>
+<%@ include file="template/menu.html" %>
 
 <p>Your search has returned <%=searchResult.size() %> results.</p>
 
-<%@ include file="questionList.html" %>
-<%@ include file="footer.html" %>
+<%@ include file="template/questionList.jsp" %>
+<%@ include file="template/footer.html" %>

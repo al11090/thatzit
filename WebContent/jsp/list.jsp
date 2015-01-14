@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 
-<%@ include file="header.html" %>
-<%@ include file="menu.html" %>
-<%@ include file="questionList.jsp" %>
-<%@ include file="footer.html" %>
+<%@ include file="template/header.html" %>
+<%@ include file="template/menu.html" %>
+<%@ include file="template/questionList.jsp" %>
+<%@ include file="template/footer.html" %>
