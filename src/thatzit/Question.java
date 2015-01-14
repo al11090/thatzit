@@ -6,9 +6,11 @@ import java.util.LinkedList;
 public class Question {
     private String title;
     private String password;
+    private int id;
     private QuestionGenre genre;
     private int status;
     private int likes;
+    private boolean deleted=false;
     private List<Description> descriptions;
 
     public Question() {
@@ -29,6 +31,12 @@ public class Question {
         return descriptions.size();
     }
 
+    public void setId(int id){
+    	this.id=id;
+    }
+    public int getId(){
+    	return id;
+    }
     public Description getDescription(int index) {
         if(index < getNumDescription()) {
             return descriptions.get(index);
@@ -82,6 +90,9 @@ public class Question {
     }
 
     public void delete() {
-        //exclude from database
+  deleted=true;
+    }
+    public boolean getDeleted(){
+    	return deleted;
     }
 }
