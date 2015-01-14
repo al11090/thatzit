@@ -86,7 +86,9 @@ public class Question {
     public void close() {
         status = 2;
     }
-
+    
+    public int getNumLikes() { return likes; }
+    
     public void like() {
         likes = likes + 1;
     }

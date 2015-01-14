@@ -25,7 +25,17 @@
       <servlet-name>QuestionViewController</servlet-name>
       <url-pattern>/view</url-pattern>
   </servlet-mapping>
-   
+  
+  <!-- list questions -->
+  <servlet>
+      <servlet-name>QuestionListController</servlet-name>
+      <servlet-class>thatzit.QuestionListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>QuestionListController</servlet-name>
+      <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  
   <!--  append description -->
   <servlet>
       <servlet-name>AppendDescriptionController</servlet-name>
