@@ -32,6 +32,6 @@ public class QuestionList {
 				}
 			}
 		}
-		return list;
+		return result;
 	}
 }
