@@ -5,15 +5,16 @@
 </tr>
 <tr>
     <td>Text to search:</td>
-    <td><input type="text" name="questionSearch" class="text"></td>
+    <td><input type="text" name="query" class="text"></td>
 </tr>
+<%--
 <tr>
     <td>Genre:</td>
     <td><select name="questionGenre">
-    <option value="0" selected>Any genre</option>
-    <option value="readFromDatabase">Read from database</option>
+    <%@ include file="genreList.jsp" %>
     </select></td>
 </tr>
+--%>
 <tr class="center">
     <td colspan="2"><input type="submit" value="Search"></td>
 </tr>

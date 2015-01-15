@@ -26,7 +26,11 @@ public class QuestionList {
 		List<Question> result = new LinkedList<Question>();
 		if (query == null || query == "*") return list;
 		for (Question question : list) {
-			if (!question.isDeleted()) result.add(question);
+			if (!question.isDeleted()) {
+				if (question.getTitle().contains(query)) {
+					result.add(question);
+				}
+			}
 		}
 		return list;
 	}
