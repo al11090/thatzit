@@ -43,9 +43,12 @@
 	<dl>
 		<dt>Your answer:</dt>
 		<dd><textarea name="description" rows="7"></textarea></dd>
+		<%--
 		<dt>Password:</dt>
 		<dd><input type="password" name="password" class="text" /></dd>
+		--%>
 	</dl>
+	<input type="hidden" name="password" value="" />
 	<input type="hidden" name="id"  value="${question.id}" />
 	<input type="submit" value="Submit answer">
 </form>

@@ -17,11 +17,14 @@
     <%@ include file="genreList.jsp" %>
     </select></td>
 </tr>
+<%--
 <tr>
     <td>Password:</td>
     <td><input type="password" name="questionPassword" class="text"></td>
 </tr>
+--%>
 <tr class="center">
+    <input type="hidden" name="password" value=""></td>
     <input type="hidden" name="ask" value="1"></td>
     <td colspan="2"><input type="submit" value="Submit question"></td>
 </tr>
