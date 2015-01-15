@@ -1,8 +1,46 @@
 .center {text-align: center}
+/*
 table.form th {padding: 20px}
 table.form td {padding: 10px}
 table.form tr {vertical-align: top}
-input.text, textarea {width: 400px}
 table.list {padding: 30px}
 tr.answer td {background-color: #aaaaaa; padding: 20px}
-table.menu td {padding: 20px}
+*/
+
+table
+{
+	width : 600px;
+}
+
+th
+{
+	border: 1px solid #0FF;
+}
+
+td.date
+{
+	width : 200px;
+	text-align: center;
+}
+
+input.text, textarea {width: 450px}
+
+.menu
+{
+	width: 600px;
+	text-align: center;
+	border-bottom: 1px solid blue;
+	line-height: 45px;
+}
+
+body
+{
+	margin-left : auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+form
+{
+	width: 100%;
+}

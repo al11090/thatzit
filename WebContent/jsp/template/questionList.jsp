@@ -12,7 +12,7 @@
 		<tr>
 			<!-- <td>${question.numLikes}</td> -->
 			<td><a href="/thatzit/view?id=${question.id}">${question.title}</a></td>
-			<td><fmt:formatDate value="${question.descriptions[0].date}" pattern="yyyy-DD-MM hh:mm:ss" /></td>
+			<td class="date"><fmt:formatDate value="${question.descriptions[0].date}" pattern="yyyy-DD-MM hh:mm:ss" /></td>
 		</tr>
 	</c:forEach>
 </table>
