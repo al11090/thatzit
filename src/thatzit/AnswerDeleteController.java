@@ -16,7 +16,7 @@ public class AnswerDeleteController extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String pass = request.getParameter("password");
 		
-		Answer ans = new Answer(id);
+		Answer ans = new Answer();
 		String res;
 		if(pass == ans.getPassword()){
 			ans.delete();

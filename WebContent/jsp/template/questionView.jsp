@@ -4,9 +4,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <h1>Q. ${question.title}</h1>
-<p>${question.genre.name}</p>
-
-<h2>description:</h2>
+<p>genre : ${question.genre.name}</p>
 <div>
 	<c:forEach var="desc" items="${question.descriptions}">
 		<div>
@@ -15,19 +13,24 @@
 		</div>
 	</c:forEach>
 </div>
+<!--
 <p><a href="javascript:alert('Thanks!');">Like this question!</a></p>
 <p><a href="javascript:alert('Thanks!');">Report this question</a></p>
 <p><a href="/thatzit/jsp/manage.jsp">manage this question</a></p>
+-->
 
 <h2>Answers:</h2>
 <c:forEach var="ans" items="${question.answers}">
 	<c:if test="${!ans.deleted}">
 		<div>
+			wrote on <fmt:formatDate value="${ans.date}" pattern="yyyy-DD-MM hh:mm:ss" />:<br />
 			${ans.description}
+			<!--
 			<p>like! : ${ans.like}</p>
 			<p><a href="javascript:alert('Thanks!');">Like this answer!</a></p>
 			<p><a href="javascript:alert('Thanks!');">Report this answer</a></p>
 			<p><a href="/thatzit/jsp/answerDelete.html">Delete this answer</a></p>
+			-->
 		</div>
 	</c:if>
 </c:forEach>

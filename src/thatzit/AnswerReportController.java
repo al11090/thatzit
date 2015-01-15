@@ -10,7 +10,7 @@ public class AnswerReportController extends HttpServlet {
     public void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws IOException, ServletException {
-        Answer answer=new Answer(0);
+        Answer answer=new Answer();
         answer.setDescription(answer.getDescription() + "[reported]");
         answer.report();
         getServletConfig().getServletContext().

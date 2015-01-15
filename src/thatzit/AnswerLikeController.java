@@ -14,7 +14,7 @@ public class AnswerLikeController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
-		Answer ans = new Answer(id);
+		Answer ans = new Answer();
 		ans.like();
 		
 		String des = ans.getDescription();
